@@ -27,8 +27,8 @@ This will create all required tables and load the needed data onto the database.
 
 #### Non-deterministic searches
 UninformedSearchWithDB.py 
-can be used for running the following algorithms: \n
-1. Uninformed search with Greedy algorithm \n
+can be used for running the following algorithms: 
+1. Uninformed search with Greedy algorithm 
 2. Uninformed search with Gravitational pull algorithm
 3. Historical parking search using Gravitational pull algorithm
 
