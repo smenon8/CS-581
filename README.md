@@ -6,7 +6,7 @@
 All scripts are stored under the folder script. The software assumes the availability of MySQL database for execution.
 
 
--------------------------------------------Requirements:-------------------------------------------------------------
+#### Requirements:
 
 Anaconda (RECOMMENDED)
 https://www.continuum.io/
@@ -17,7 +17,7 @@ OR
 Python 3.5
 All .py scripts can be executed using command line arguments as described below.
 
---------------------------------------------Environment setup-------------------------------------------------------
+#### Environment setup
 The parking resource search highly depends on pre-computed distance and times between nodes which are stored in the MySQL database.
 
 Please create a database ParkingProject in MySQL and the execute the below SQL.
@@ -25,7 +25,7 @@ SQL/Dump parking Project.sql
 
 This will create all required tables and load the needed data onto the database.
 
-------------------------------------Non-deterministic searches-------------------------------------------------------
+#### Non-deterministic searches
 UninformedSearchWithDB.py 
 can be used for running the following algorithms:
 1. Uninformed search with Greedy algorithm
