@@ -1,7 +1,7 @@
-# CS-581
-## DBMS final project - Resource Search Project
+## CS-581
+### DBMS final project - Resource Search Project
 
-## Group 2: Sreejith Menon, Rajan Shekar Bhandari, Thomas Dutta, Imran Choudhury
+### Group 2: Sreejith Menon, Rajan Shekar Bhandari, Thomas Dutta, Imran Choudhury
 
 All scripts are stored under the folder script. The software assumes the availability of MySQL database for execution.
 
@@ -41,9 +41,9 @@ NOW: cnx = connectToMySQL()
 Change it to: cnx = connectToMySQL(<user>,<password>,<dbname>)
 
 The script can be run at command line using the below command
-## python UninformedSearchWithDB.py
+#### python UninformedSearchWithDB.py
 
-## The driving method is parkingSearch()
+#### The driving method is parkingSearch()
 Expected parameters: source latitude, sournce longitude, request time, congestion percentage, method name
 Valid values for methodName = 'uninformed' or 'probabilistic' or 'baseline' 
 Return values : selected slot ID, total parking time, driving time, walking time, waypoints and number of iterations
@@ -56,13 +56,13 @@ print(parkingSearch(37.808245,-122.415816,'2012-05-05 23:40:13',1))  # returns t
 
 print(parkingSearch(37.808245,-122.415816,'2012-05-05 23:40:13',1,'probabilistic'))  # returns the results found using historical search using gravitational pull algorithm
 
-------------------------------------Deterministic search-------------------------------------------------------
-## InformedSearchWithRealTimeData.ipynb
+#### Deterministic search
+#### InformedSearchWithRealTimeData.ipynb
 
 Make a Call to function in a seperate block in the notebook
-## findRealTimeParkingBlock(sourcePt,dest,time,congestionlevel,sourceId,drivetimeduration,iteration)
+#### findRealTimeParkingBlock(sourcePt,dest,time,congestionlevel,sourceId,drivetimeduration,iteration)
 
-## Definitions of the arguments
+#### Definitions of the arguments
 sourcePt – Source for the algorithm (provide any node end point value i.e. intersection value from database)
 dest – Destination for the algorithm (source and destination are same in our implementation)
 time – start datetime of algorithm
@@ -71,22 +71,22 @@ sourceId – node Id of the intersection acting as sourcePt
 drivetimeduration – provide as 0
 iteration – provide as 0 
 
-## Sample Run
+### Sample Run
 findRealTimeParkingBlock(Point(37.806054, -122.410329),Point(37.806054, -122.410329),'2012-04-06 00:06:32',0,7038,0,0)
 
 
-------------------------------------------Simulation scripts------------------------------------------------------
-Simulation.py 
+#### Simulation scripts
+#### Simulation.py 
 is a script used to simulate all the experiments
 
 Experiments are conducted by making calls inside the __main__() function as described below:
 All experiments can be conducted by making calls to the method:
 gatherData(methName,conjestion,outFile)
-# Expected parameters: Algorithm or method name, congestion level and name of the output csv file expeceted
-# Accepted method names: gravity, baseline or probabilistic
-# Output: A CSV file with the specified outFile name having below header
-# Timestamp,Source_node_id,DestinationID,TotalTime,DrivingTime,WalkingTime,No_of_iteration
+Expected parameters: Algorithm or method name, congestion level and name of the output csv file expeceted
+Accepted method names: gravity, baseline or probabilistic
+Output: A CSV file with the specified outFile name having below header
+Timestamp,Source_node_id,DestinationID,TotalTime,DrivingTime,WalkingTime,No_of_iteration
 
-------------------------------------------Additionals------------------------------------------------------
+#### Additionals
 The one time precomputations can be reconducted by using the below IPython Notebook code.
-OneTimePreComputation.ipynb
+#### OneTimePreComputation.ipynb
