@@ -4,7 +4,9 @@ import csv
 importlib.reload(UDB)
 
 # Expected parameters: Algorithm or method name, congestion level and name of the output csv file expeceted
-
+# Accepted method names: gravity, baseline or probabilistic
+# Output: A CSV file with the specified outFile name having below header
+# Timestamp,Source_node_id,DestinationID,TotalTime,DrivingTime,WalkingTime,No_of_iteration
 def gatherData(methName,conjestion,outFile):
    
     cnx = UDB.connectToMySQL()
